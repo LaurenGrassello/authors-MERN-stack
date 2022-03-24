@@ -13,7 +13,7 @@ module.exports.createProduct = (req, res) =>{
 }
 
 module.exports.findAllProducts = (req, res)=> {
-    Product.find()
+    Product.find().collation({ locale: 'en', strength: 2 }).sort({ name: 1 })
     .then(allProducts => res.json(allProducts))
     .catch(err => res.status(400).json(err));
 }
