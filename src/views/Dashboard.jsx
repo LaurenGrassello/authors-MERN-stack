@@ -30,7 +30,7 @@ const Dashboard = () => {
         <Link to={`/new`}>Add a new author</Link>
         <h4>We have quotes by:</h4>
                     <tr>
-                        <th> Name</th>
+                        <th> Author</th>
                         <th colSpan={2}> Actions</th>
                     </tr>
                 </thead>
